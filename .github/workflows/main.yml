@@ -20,6 +20,7 @@ jobs:
         # GitHub Action for running Cypress end-to-end tests
         uses: cypress-io/github-action@v5
         with:
+          command: npm run cy:grepTags
           record: true
           parallel: true
         env:
