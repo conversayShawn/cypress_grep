@@ -3,7 +3,7 @@
 // https://github.com/cypress-io/cypress/issues/6720
 
 context('Spies, Stubs, and Clock', () => {
-  it('cy.spy() - wrap a method in a spy', () => {
+  it('cy.spy() - wrap a method in a spy', {tags: ['banana', 'apple']}, () => {
     // https://on.cypress.io/spy
     cy.visit('https://example.cypress.io/commands/spies-stubs-clocks')
 

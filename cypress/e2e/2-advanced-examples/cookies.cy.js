@@ -37,7 +37,7 @@ context('Cookies', () => {
     })
   })
 
-  it('cy.getAllCookies() - get all browser cookies', () => {
+  it('cy.getAllCookies() - get all browser cookies', {tags: ['banana', 'apple']}, () => {
     // https://on.cypress.io/getallcookies
     cy.getAllCookies().should('be.empty')
 

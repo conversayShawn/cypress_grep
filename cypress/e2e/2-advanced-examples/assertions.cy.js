@@ -38,7 +38,7 @@ context('Assertions', () => {
       // see https://on.cypress.io/using-cypress-faq#How-do-I-get-an-element’s-text-contents
     })
 
-    it('.and() - chain multiple assertions together', () => {
+    it('.and() - chain multiple assertions together', {tags: ['banana', 'apple']}, () => {
       // https://on.cypress.io/and
       cy.get('.assertions-link')
         .should('have.class', 'active')

@@ -40,7 +40,7 @@ context('Actions', () => {
       .prev().should('have.attr', 'style', 'color: orange;')
   })
 
-  it('.blur() - blur off a DOM element', () => {
+  it('.blur() - blur off a DOM element', {tags: ['banana', 'apple']}, () => {
     // https://on.cypress.io/blur
     cy.get('.action-blur').type('About to blur').blur()
       .should('have.class', 'error')

@@ -12,7 +12,7 @@ context('Traversal', () => {
       .should('contain', 'Data')
   })
 
-  it('.closest() - get closest ancestor DOM element', () => {
+  it('.closest() - get closest ancestor DOM element', {tags: ['banana', 'apple']}, () => {
     // https://on.cypress.io/closest
     cy.get('.traversal-badge')
       .closest('ul')
@@ -31,7 +31,7 @@ context('Traversal', () => {
       .filter('.active').should('contain', 'About')
   })
 
-  it('.find() - get descendant DOM elements of the selector', () => {
+  it('.find() - get descendant DOM elements of the selector', {tags: ['banana', 'apple']}, () => {
     // https://on.cypress.io/find
     cy.get('.traversal-pagination')
       .find('li').find('a')
