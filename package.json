@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "gh:grepTags": "npx cypress run --env grepTags='banana',grepFilterSpecs=true --record --parallel",
-    "azure:grepTags": "npx cypress run --env grepTags='banana',grepFilterSpecs=true"
+    "azure:grepTags": "npx cypress run --env grepTags='banana',grepFilterSpecs=true --record"
   },
   "author": "",
   "license": "ISC",
