@@ -13,10 +13,10 @@ steps:
 - script: |
      npm install
      npm run azure:grepTags
-   displayName: "npm install and Run Cypress test"
-   env:
-     # map the secret Cypress record key as environmental variable for this step
-     CYPRESS_RECORD_KEY: $(CYPRESS_RECORD_KEY)
+     displayName: "npm install and Run Cypress test"
+     env:
+       # map the secret Cypress record key as environmental variable for this step
+       CYPRESS_RECORD_KEY: $(CYPRESS_RECORD_KEY)
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
