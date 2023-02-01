@@ -12,7 +12,7 @@ pool:
 steps:
 - script: |
      npm install
-     npm run cy:grepTags
+     npm run azure:grepTags
    displayName: "npm install and Run Cypress test"
    env:
      # map the secret Cypress record key as environmental variable for this step
