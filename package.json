@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:grepTags": "npx cypress run --env grepTags='banana'"
+    "cy:grepTags": "npx cypress run --env grepTags='banana',grepFilterSpecs=true"
   },
   "author": "",
   "license": "ISC",
